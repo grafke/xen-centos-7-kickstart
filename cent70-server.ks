@@ -16,7 +16,8 @@ keyboard us
 # Configure networking without IPv6, firewall off
 
 # for STATIC IP: uncomment and configure
-network --onboot=yes --device=eth0 --bootproto=static --ip=192.168.207.200 --netmask=255.255.255.0 --gateway=192.168.207.9 --nameserver=8.8.8.8 --noipv6 --hostname=centos_7_template
+# network --onboot=yes --device=eth0 --bootproto=static --ip=192.168.207.200 --netmask=255.255.255.0 --gateway=192.168.207.9 --nameserver=8.8.8.8 --noipv6 --hostname=centos_7_template
+network --onboot=yes --device=eth0 --bootproto=static --ip=192.168.0.200 --netmask=255.255.255.0 --gateway=192.168.0.2 --nameserver=8.8.8.8 --noipv6 --hostname=centos_7_template
 
 # for DHCP: uncomment and configure
 # network --bootproto=dhcp --device=eth0 --onboot=on
